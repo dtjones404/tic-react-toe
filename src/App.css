@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding: 0 2.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.box {
+  height: 180px;
+  width: 180px;
+  margin: 1px;
+  border: px solid black;
+  background-color: rgb(42, 97, 148);
+  background-image: linear-gradient(
+    to right,
+    rgb(42, 97, 148),
+    rgb(82, 137, 188)
+  );
+  font-style: bold;
+  font-size: 10em;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.winner {
+  border: 5px outset red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header {
+  display: flex;
+  justify-content: center;
+  font-size: 4em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.box:hover {
+  background-image: linear-gradient(
+    to left,
+    rgb(42, 97, 148),
+    rgb(82, 137, 188)
+  );
+}
+
+#winner {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#resetButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+#resetButton {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background-image: repeating-radial-gradient(white, red);
+  font-size: 150%;
+}
+#resetButton:hover {
+  background-image: repeating-radial-gradient(white, rgb(255, 43, 43));
 }
